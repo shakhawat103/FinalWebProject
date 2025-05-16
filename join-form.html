@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Join Committee Form</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
       body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
+        height: 900px;
+      }
+
+      .container1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 900px;
+        height: 70vh;
       }
       .form-container {
         background-color: white;
@@ -35,7 +40,7 @@
       button {
         width: 100%;
         padding: 12px;
-        background-color: #006400;
+        background-color: green;
         color: white;
         font-size: 16px;
         border: none;
@@ -43,43 +48,76 @@
         cursor: pointer;
       }
       button:hover {
-        background-color: #005f5f;
+        background-color: #006400;
       }
     </style>
   </head>
   <body>
-    <div class="form-container">
-      <h2>Committee Registration Form</h2>
-      <form action="#" method="post">
-        <input type="text" name="fullName" placeholder="Full Name" style="width: 95%" required />
-        <select name="dept" id="dept">
-          <option value="">Department</option>
-          <option value="">CSE</option>
-          <option value="">SWE</option>
-          <option value="">ADS</option>
-        </select>
+    <header>
+      <h1>Green University Virtual Gaming Society</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="team.html">Committee</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-        <select name="batch" id="batch" style="width: 100%">
-          <option value="#">Batch</option>
-          <option value="">212</option>
-          <option value="">213</option>
-          <option value="">221</option>
-          <option value="">222</option>
-          <option value="">223</option>
-          <option value="">231</option>
-          <option value="">232</option>
-        </select>
-        <input type="text" name="studentId" placeholder="Student ID" style="width: 95%" required />
-        <input
-          type="text"
-          name="expectedPosition"
-          placeholder="Expected Position" style="width: 95%"
-          required
-        />
-        <input type="tel" name="phone" placeholder="Phone Number" style="width: 95%" required />
-        <input type="email" name="email" placeholder="Email" style="width: 95%" required />
-        <button type="submit" onclick="alert('Submitted')" >Submit</button>
-      </form>
+    <div class="container1">
+      <div class="form-container">
+        <h2>Committee Registration Form</h2>
+        <form action="#" method="post">
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Full Name"
+            required
+          />
+          <select name="dept" id="dept">
+            <option value="">Department</option>
+            <option value="">CSE</option>
+            <option value="">SWE</option>
+            <option value="">ADS</option>
+          </select>
+
+          <select name="batch" id="batch" style="width: 100%">
+            <option value="#">Batch</option>
+            <option value="">212</option>
+            <option value="">213</option>
+            <option value="">221</option>
+            <option value="">222</option>
+            <option value="">223</option>
+            <option value="">231</option>
+            <option value="">232</option>
+          </select>
+          <input
+            type="text"
+            name="studentId"
+            placeholder="Student ID"
+            required
+          />
+          <input
+            type="text"
+            name="expectedPosition"
+            placeholder="Expected Position"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <button type="submit" onclick="alert('Submitted')">Submit</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
