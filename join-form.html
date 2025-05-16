@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Join Committee Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+      }
+      .form-container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        color: #004d4d;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #006400;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #005f5f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Committee Registration Form</h2>
+      <form action="#" method="post">
+        <input type="text" name="fullName" placeholder="Full Name" style="width: 95%" required />
+        <select name="dept" id="dept">
+          <option value="">Department</option>
+          <option value="">CSE</option>
+          <option value="">SWE</option>
+          <option value="">ADS</option>
+        </select>
+
+        <select name="batch" id="batch" style="width: 100%">
+          <option value="#">Batch</option>
+          <option value="">212</option>
+          <option value="">213</option>
+          <option value="">221</option>
+          <option value="">222</option>
+          <option value="">223</option>
+          <option value="">231</option>
+          <option value="">232</option>
+        </select>
+        <input type="text" name="studentId" placeholder="Student ID" style="width: 95%" required />
+        <input
+          type="text"
+          name="expectedPosition"
+          placeholder="Expected Position" style="width: 95%"
+          required
+        />
+        <input type="tel" name="phone" placeholder="Phone Number" style="width: 95%" required />
+        <input type="email" name="email" placeholder="Email" style="width: 95%" required />
+        <button type="submit" onclick="alert('Submitted')" >Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
